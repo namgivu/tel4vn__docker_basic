@@ -1,14 +1,6 @@
 # can mayao moi truong python ie co lenh python sansang chay
-FROM python
-
 # git clone source code Flask app vao APP_HOME aka WORKDIR
-WORKDIR /app
-COPY . .
-
 # cd WORKDIR ; python -m pip install --upgrade pip ; python -m pip install -r ./requirements.txt ; python ./app.py
-RUN python -m pip install --upgrade pip
-RUN python -m pip install -r ./requirements.txt
+# LUU Y: Flask==2.* trong requirements.txt de chay voi 3.8 3.9
+# flask app chay o cong 5000
 
-EXPOSE 5000
-
-CMD python ./app.py

@@ -1,1 +1,2 @@
-Flask==0.12.3
+# Flask==0.12.3  # cannot run with python 3.8 3.9
+Flask==2.*
