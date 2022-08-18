@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  jekyll:
+    image: bretfisher/jekyll-serve
+    volumes:
+      - .:/site
+    ports:
+      - 80:4000
+
+cd :docker_basic/bindmount-sample-1
+docker run \
+    -v `pwd`:/site \
+    -p 80:4000 \
+    bretfisher/jekyll-serve
