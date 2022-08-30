@@ -11,6 +11,6 @@ Download source code from: https://github.com/tel4vn/docker_basic/tree/master/co
     + Run of them --detach (or -d ), name them with --name es on 9200:9200 and 9300:9300
     + When elasticsearch use the --env option (or -e ) to pass in discovery.type=single-node
 + Start the flask app container
-    + Run the falsk app base on this image above
+    + Run the flask app base on this image above
     + Run of them --detach (or -d ), name them with --name es on 5000:5000
 3. Implement docker-compose with build step for this project
